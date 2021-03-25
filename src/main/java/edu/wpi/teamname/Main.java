@@ -13,9 +13,13 @@ public class Main {
     System.out.println("Jay Yen");
     System.out.println("Jillian");
     System.out.println("Ben Staw");
+    System.out.println("Zhongchuan Xu");
     System.out.println("Patrick Spillane");
 
     System.out.println("Branch - Jillian Wright");
+    System.out.println("Evelyn Tran");
+    System.out.println("Pinhan Zhao");
+    System.out.println("Alex Strickland");
   }
 }
 
