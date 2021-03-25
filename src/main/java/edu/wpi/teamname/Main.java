@@ -11,7 +11,9 @@ public class Main {
      */
     System.out.println("Team Member Names Below:");
     System.out.println("Jay Yen");
-    System.out.println("Evelyn Tran");
+    System.out.println("Jillian");
+    System.out.println("Ben Staw");
+    System.out.println("Zhongchuan Xu");
   }
 }
 
