@@ -1,10 +1,10 @@
 package edu.wpi.teamname.services.database;
 
-import com.google.inject.Inject;
+//import com.google.inject.Inject;
 import java.sql.*;
-import lombok.extern.slf4j.Slf4j;
+//import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
+//@Slf4j
 public class DatabaseService {
   /*
    Database service class. This class will be loaded as a Singleton by Guice.
@@ -12,7 +12,7 @@ public class DatabaseService {
 
   private final Connection connection;
 
-  @Inject
+ // @Inject
   DatabaseService(Connection connection) {
     this.connection = connection;
   }
@@ -31,7 +31,7 @@ public class DatabaseService {
       query = "INSERT into Employees(Name, salary, location) VALUES('Wilson Wong', 100000, 'WPI')";
       stmt.execute(query);
     } catch (SQLException e) {
-      log.error(e.getMessage());
+     // log.error(e.getMessage());
     }
   }
 
@@ -43,7 +43,7 @@ public class DatabaseService {
         return res.getString("Name");
       }
     } catch (SQLException throwables) {
-      log.error(throwables.getMessage());
+ //     log.error(throwables.getMessage());
     }
     return null;
   }

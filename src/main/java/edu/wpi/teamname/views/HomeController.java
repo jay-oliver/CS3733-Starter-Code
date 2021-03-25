@@ -1,6 +1,6 @@
 package edu.wpi.teamname.views;
 
-import com.google.inject.Inject;
+//import com.google.inject.Inject;
 import edu.wpi.teamname.services.ServiceTwo;
 import edu.wpi.teamname.services.database.DatabaseService;
 import edu.wpi.teamname.state.HomeState;
@@ -15,15 +15,15 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import lombok.extern.slf4j.Slf4j;
+//import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
+//@Slf4j
 public class HomeController implements Initializable {
 
-  @Inject DatabaseService db;
-  @Inject ServiceTwo graph;
-  @Inject FXMLLoader loader;
-  @Inject HomeState state;
+  //@Inject DatabaseService db;
+  //@Inject ServiceTwo graph;
+ // @Inject FXMLLoader loader;
+  //@Inject HomeState state;
   @FXML private Label text;
 
   private Scene appPrimaryScene;
@@ -34,29 +34,29 @@ public class HomeController implements Initializable {
    *
    * @param appPrimaryScene Primary scene of the app whose root will be changed
    */
-  @Inject
+  //@Inject
   public void setAppPrimaryScene(Scene appPrimaryScene) {
     this.appPrimaryScene = appPrimaryScene;
   }
 
   @Override
   public void initialize(URL location, ResourceBundle resources) {
-    log.debug(state.toString());
-    text.visibleProperty().bind(this.state.getClickedProperty());
-    text.textProperty().bind(this.state.getCurrentNodeProperty());
+  //  log.debug(state.toString());
+  //  text.visibleProperty().bind(this.state.getClickedProperty());
+  //  text.textProperty().bind(this.state.getCurrentNodeProperty());
   }
 
   @FXML
   private void buttonClicked(ActionEvent actionEvent) throws IOException {
-    log.trace("{} clicked", ((Button) actionEvent.getSource()).getText());
-    log.info(db.getEmployeeName());
-    this.state.getClickedProperty().set(!state.getClickedProperty().get());
-    this.state.getCurrentNodeProperty().set(graph.getResults().get(0));
+  //  log.trace("{} clicked", ((Button) actionEvent.getSource()).getText());
+  //  log.info(db.getEmployeeName());
+  //  this.state.getClickedProperty().set(!state.getClickedProperty().get());
+  //  this.state.getCurrentNodeProperty().set(graph.getResults().get(0));
     advanceScene();
   }
 
   private void advanceScene() throws IOException {
-    Parent root = loader.load(getClass().getResourceAsStream("HomeView.fxml"));
-    appPrimaryScene.setRoot(root);
+  //  Parent root = loader.load(getClass().getResourceAsStream("HomeView.fxml"));
+  //  appPrimaryScene.setRoot(root);
   }
 }
