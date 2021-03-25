@@ -16,6 +16,8 @@ public class Main {
     System.out.println("Zhongchuan Xu");
     System.out.println("Evelyn Tran");
     System.out.println("Pinhan Zhao");
+
+    System.out.println("Evelyn Tran");
   }
 }
 
