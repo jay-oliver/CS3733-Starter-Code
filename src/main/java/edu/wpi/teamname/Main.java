@@ -10,6 +10,11 @@ public class Main {
     App.launch(App.class, args);
      */
     System.out.println("Team Member Names Below:");
-    System.out.println("Pinhan Zhao");
+    System.out.println("Jay Yen");
+    System.out.println("Jillian");
+    System.out.println("Ben Staw");
+    System.out.println("Zhongchuan Xu");
   }
 }
+
+
